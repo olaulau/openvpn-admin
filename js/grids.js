@@ -206,16 +206,16 @@ $(function () {
          field: "user_online",
          formatter : LEDIndicatorFormatter
       },
-      {
-         title: "Enabled",
-         field: "user_enable",
-         formatter : checkFormatter,
-         events: {
-            'click input': function (e, value, row) {
-               genericSetField('user_enable', $(this).is(':checked') ? '1' : '0', row.user_id);
-            }
-         }
-      },
+//      {
+//         title: "Enabled",
+//         field: "user_enable",
+//         formatter : checkFormatter,
+//         events: {
+//            'click input': function (e, value, row) {
+//               genericSetField('user_enable', $(this).is(':checked') ? '1' : '0', row.user_id);
+//            }
+//         }
+//      },
       { title: "Start Date", field: "user_start_date", editable: userDateEditable },
       { title: "End Date", field: "user_end_date", editable: userDateEditable },
       {
