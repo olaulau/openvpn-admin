@@ -52,7 +52,7 @@ function getHistory($cfg_file, $accordion_id, $open_first_history_tab = false) {
                   </div>
                   <div class="modal-body">
                      <div class="form-group">
-                        <label for="modal-user-add-username">Utilisateur</label>
+                        <label for="modal-user-add-username">Identifiant</label>
                         <input type="text" name="username" id="modal-user-add-username" class="form-control" autofocus/>
                      </div>
                      <div class="form-group">
@@ -97,7 +97,7 @@ function getHistory($cfg_file, $accordion_id, $open_first_history_tab = false) {
                   </div>
                   <div class="modal-body">
                      <div class="form-group">
-                        <label for="modal-admin-add-username">Nom d'utilisateur</label>
+                        <label for="modal-admin-add-username">Identifiant</label>
                         <input type="text" name="username" id="modal-admin-add-username" class="form-control" autofocus/>
                      </div>
                      <div class="form-group">
@@ -107,7 +107,7 @@ function getHistory($cfg_file, $accordion_id, $open_first_history_tab = false) {
                   </div>
                   <div class="modal-footer">
                      <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                     <button type="button" class="btn btn-primary" id="modal-admin-add-save">sauvegarder</button>
+                     <button type="button" class="btn btn-primary" id="modal-admin-add-save">Sauvegarder</button>
                   </div>
                </div>
             </div>
