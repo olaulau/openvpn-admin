@@ -199,8 +199,8 @@ $(function () {
     columns: [
       { title: "Identifiant", field: "user_id", editable: userEditable },
       { title: "Mot de Passe", field: "user_pass", editable: userEditable },
-      { title: "Email", field: "user_mail", editable: userEditable },
-      { title: "Téléphone", field: "user_phone", editable: userEditable },
+//      { title: "Email", field: "user_mail", editable: userEditable },
+//      { title: "Téléphone", field: "user_phone", editable: userEditable },
       {
          title: "En ligne",
          field: "user_online",
