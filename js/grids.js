@@ -179,7 +179,7 @@ $(function () {
     }
   }
 
-  // ------------------------- ADMIN definitions -------------------------
+  // ------------------------- ADMIN definitions --------q-----------------
   var $logTable = $('#table-logs');
 
 
@@ -197,12 +197,12 @@ $(function () {
     // Primary key
     idField: 'user_id',
     columns: [
-      { title: "ID", field: "user_id", editable: userEditable },
-      { title: "Pass", field: "user_pass", editable: userEditable },
-      { title: "Mail", field: "user_mail", editable: userEditable },
-      { title: "Phone", field: "user_phone", editable: userEditable },
+      { title: "Identifiant", field: "user_id", editable: userEditable },
+      { title: "Mot de Passe", field: "user_pass", editable: userEditable },
+      { title: "Email", field: "user_mail", editable: userEditable },
+      { title: "Téléphone", field: "user_phone", editable: userEditable },
       {
-         title: "Online",
+         title: "En ligne",
          field: "user_online",
          formatter : LEDIndicatorFormatter
       },
@@ -216,15 +216,15 @@ $(function () {
 //            }
 //         }
 //      },
-      { title: "Start Date", field: "user_start_date", editable: userDateEditable },
-      { title: "End Date", field: "user_end_date", editable: userDateEditable },
+      { title: "Date début", field: "user_start_date", editable: userDateEditable },
+      { title: "Date fin", field: "user_end_date", editable: userDateEditable },
       {
-        title: 'Delete',
+        title: 'Supprimer',
         field: "user_del",
         formatter: deleteFormatter,
         events: {
           'click .glyphicon': function (e, value, row) {
-            if (confirm('Are you sure you want to delete this user?')) {
+            if (confirm('Êtes vous sûr de vouloir supprimer cet utilisateur ?')) {
               deleteUser(row.user_id);
             }
           }
@@ -255,15 +255,15 @@ $(function () {
     // Primary key
     idField: 'admin_id',
     columns: [
-      { title: "ID", field: "admin_id", editable: adminEditable },
-      { title: "Pass", field: "admin_pass", editable: adminEditable },
+      { title: "Identifiant", field: "admin_id", editable: adminEditable },
+      { title: "Mot de passe", field: "admin_pass", editable: adminEditable },
       {
-        title: 'Delete',
+        title: 'Supprimer',
         field: "admin_del",
         formatter: deleteFormatter,
         events: {
           'click .glyphicon': function (e, value, row) {
-            if (confirm('Are you sure you want to delete this admin?')) {
+            if (confirm('Êtes vous sûr de vouloir supprimer cet administrateur ?')) {
               deleteAdmin(row.admin_id);
             }
           }
@@ -293,16 +293,16 @@ $(function () {
       return params;
     },
     columns: [
-      { title: "Log ID", field: "log_id" },
-      { title: "User ID", field: "user_id", filterControl : 'select' },
-      { title: "Trusted IP", field: "log_trusted_ip", filterControl : 'select' },
-      { title: "Trusted Port", field: "log_trusted_port", filterControl : 'select' },
-      { title: "Remote IP", field: "log_remote_ip", filterControl : 'select' },
-      { title: "Remote Port", field: "log_remote_port", filterControl : 'select' },
-      { title: "Start Time", field: "log_start_time" },
-      { title: "End Time", field: "log_end_time" },
-      { title: "Receveid", field: "log_received" },
-      { title: "Sent", field: "log_send" }
+      { title: "Identifiant", field: "log_id" },
+      { title: "Utilisateur", field: "user_id", filterControl : 'select' },
+      { title: "IP sécurisée", field: "log_trusted_ip", filterControl : 'select' },
+      { title: "Port sécurisé", field: "log_trusted_port", filterControl : 'select' },
+      { title: "IP distant", field: "log_remote_ip", filterControl : 'select' },
+      { title: "Port distant", field: "log_remote_port", filterControl : 'select' },
+      { title: "Heure début", field: "log_start_time" },
+      { title: "Heure fin", field: "log_end_time" },
+      { title: "Reçu", field: "log_received" },
+      { title: "Envoyé", field: "log_send" }
     ]
   });
 

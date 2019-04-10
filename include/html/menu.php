@@ -4,7 +4,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li <?php if(!isset($_GET['admin'])) echo 'class="active"'; ?>><a href="index.php">Configurations</a></li>
-        <li <?php if(isset($_GET['admin'])) echo 'class="active"'; ?>><a href="index.php?admin">Administrator</a></li>
+        <li <?php if(isset($_GET['admin'])) echo 'class="active"'; ?>><a href="index.php?admin">Administrateur</a></li>
       </ul>
     </div>
 

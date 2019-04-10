@@ -4,17 +4,17 @@
     <form id="configuration_form" method="POST" class="panel panel-default">
 
       <div class="panel-heading">
-        <h3 class="panel-title">Get the configuration files</h3>
+        <h3 class="panel-title">Récupérer les fichiers de configuration</h3>
       </div>
 
       <div class="panel-body">
         <div class="form-group">
-          <label for="configuration_username">Username</label>
+          <label for="configuration_username">Identifiant</label>
           <input type="text" id="configuration_username" name="configuration_username" class="form-control" autofocus/>
         </div>
 
         <div class="form-group">
-          <label for="configuration_pass">Password</label>
+          <label for="configuration_pass">Mot de passe</label>
           <input type="password" id="configuration_pass" name="configuration_pass" class="form-control" />
         </div>
 
@@ -27,7 +27,7 @@
           </select>
         </div>
 
-        <input id="configuration_get" name="configuration_get" type="submit" value="Get configuration files" class="btn btn-default" />
+        <input id="configuration_get" name="configuration_get" type="submit" value="Télécharger" class="btn btn-default" />
       </div>
 
     </form>

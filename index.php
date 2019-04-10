@@ -110,7 +110,7 @@
     // --------------- INSTALLATION ---------------
     if(isset($_GET['installation'])) {
       if(isInstalled($bdd) == true) {
-        printError('OpenVPN-admin is already installed. Redirection.');
+        printError('OpenVPN-admin est déjà installé. redirection.');
         header( "refresh:3;url=index.php?admin" );
         exit(-1);
       }
@@ -122,7 +122,7 @@
         $admin_repeat_pass = $_POST['repeat_admin_pass'];
 
         if($admin_pass != $admin_repeat_pass) {
-          printError('The passwords do not correspond. Redirection.');
+          printError('Les mots de passe ne correspondent pas, redirection.');
           header( "refresh:3;url=index.php?installation" );
           exit(-1);
         }
@@ -154,7 +154,7 @@
         $req->execute(array($admin_username, $hash_pass));
 
         rmdir(dirname(__FILE__) . '/sql');
-        printSuccess('Well done, OpenVPN-Admin is installed. Redirection.');
+        printSuccess('Bravo, OpenVPN-Admin est installé. redirection.');
         header( "refresh:3;url=index.php?admin" );
       }
       // Print the installation form
@@ -191,10 +191,10 @@
       <nav class="navbar navbar-default">
         <div class="row col-md-12">
           <div class="col-md-6">
-            <p class="navbar-text signed">Signed in as <?php echo $_SESSION['admin_id']; ?>
+            <p class="navbar-text signed">Connecté en tant que <?php echo $_SESSION['admin_id']; ?>
             </div>
             <div class="col-md-6">
-              <a class="navbar-text navbar-right" href="index.php?logout" title="Logout"><button class="btn btn-danger">Logout <span class="glyphicon glyphicon-off" aria-hidden="true"></span></button></a>
+              <a class="navbar-text navbar-right" href="index.php?logout" title="Logout"><button class="btn btn-danger">Déconnecter <span class="glyphicon glyphicon-off" aria-hidden="true"></span></button></a>
               <a class="navbar-text navbar-right" href="index.php" title="Configuration"><button class="btn btn-default">Configurations</button></a>
             </p>
           </div>
